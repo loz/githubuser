@@ -10,9 +10,9 @@ Plan of Action
 2. Heroku
   [ ] Installed and running
 3. Main App
-  [ ] List Orgs
-  [ ] View Ord
-  [ ] Enter username
+  [X] List Orgs
+  [X] View Org
+  [X] Enter username
   [ ] Show Current Permissions
   [ ] Enter repo access desired
   [ ] Show teams with access

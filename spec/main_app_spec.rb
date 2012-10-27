@@ -23,8 +23,8 @@ describe MainApp do
 
       it "shows all the user's organizations" do
         page = last_response.body
-        page.should match link_to "/OrgOne/", "OrgOne"
-        page.should match link_to "/OrgTwo/", "OrgTwo"
+        page.should match link_to "/org/OrgOne/", "OrgOne"
+        page.should match link_to "/org/OrgTwo/", "OrgTwo"
       end
 
     end

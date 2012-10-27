@@ -19,3 +19,4 @@ end
 env[:mode] = ENV["RACK_ENV"] || 'development'
 
 require 'main_app'
+require 'org_app'

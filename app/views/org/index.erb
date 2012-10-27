@@ -1,0 +1,14 @@
+<div class='hero-unit'>
+  <h1>
+    <img src="<%= @org.avatar_url %>"/>
+    <%= @org.login %>
+  </h1>
+</div>
+<form action="/org/<%= @org.login %>/permissions">
+  <legend>Search For User</legend>
+  <label>Github Username</label>
+  <input type="text" name="username">
+  <p>
+    <input type="submit" class="btn">
+  </p>
+</form>
