@@ -1,0 +1,19 @@
+Plan of Action
+==============
+
+[ ] == TODO,  [X] == DONE
+
+1. Authentication
+  [ ] Not logged in, ask to sign in via github
+  [ ] Sign in via GitHub
+  [ ] Store credentials in session
+2. Heroku
+  [ ] Installed and running
+3. Main App
+  [ ] List Orgs
+  [ ] View Ord
+  [ ] Enter username
+  [ ] Show Current Permissions
+  [ ] Enter repo access desired
+  [ ] Show teams with access
+  [ ] Click add to team -> Add

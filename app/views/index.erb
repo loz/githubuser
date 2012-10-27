@@ -1,0 +1,13 @@
+<div class='hero-unit'>
+  <h1>Github Users</h1>
+  <p>Welcome to Github Org User Managment!.</p>
+  <p>
+    This site is designed to help manage adding and revoking users easier for
+    organisations.
+  </p>
+</div>
+<% if current_user %>
+<% else %>
+  <p>You need to sign in to access the problems.</p>
+  <p><a class="btn btn-primary btn-large" href="/auth/github">Sign in with GitHub</a></p>
+<% end %>
