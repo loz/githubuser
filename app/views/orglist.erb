@@ -1,0 +1,6 @@
+<h2>Organizations</h2>
+<ul class="nav nav-tabs nav-stacked">
+  <% client.organizations.each do |org| %>
+    <li><a href="/<%= org.login %>/"><img src="<%= org.avatar_url %>"/> <%= org.login %></a></li>
+  <% end %>
+<ul>

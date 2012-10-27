@@ -4,9 +4,19 @@ require 'omniauth-github'
 require 'helpers'
 
 class MainApp < Sinatra::Application
+
+  attr_reader :client_class
+
+  def initialize(*args)
+    super
+    options = args.last
+    options = {} unless options.is_a? Hash
+    @client_class = options[:client_class] || Octokit::Client
+  end
+
   use Rack::Session::Cookie
   use OmniAuth::Builder do
-    provider :github, ENV['GH_TOKEN'], ENV['GH_SECRET']
+    provider :github, ENV['GH_TOKEN'], ENV['GH_SECRET'], scope: "user,repo"
   end
 
   helpers Helpers::Users

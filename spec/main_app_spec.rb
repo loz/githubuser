@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe MainApp do
+  subject { described_class.new :client_class => DummyGithubClient }
   let(:app) { subject }
 
   describe '/' do
@@ -17,6 +18,13 @@ describe MainApp do
 
       it "indicates the user logged in name" do
         last_response.body.should include user[:name]
+      end
+
+
+      it "shows all the user's organizations" do
+        page = last_response.body
+        page.should match link_to "/OrgOne/", "OrgOne"
+        page.should match link_to "/OrgTwo/", "OrgTwo"
       end
 
     end

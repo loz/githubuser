@@ -17,4 +17,5 @@ RSpec.configure do |config|
   require 'support/rack'
   require 'support/markup'
   require 'support/users'
+  require 'support/github'
 end
