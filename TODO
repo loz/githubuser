@@ -4,9 +4,9 @@ Plan of Action
 [ ] == TODO,  [X] == DONE
 
 1. Authentication
-  [ ] Not logged in, ask to sign in via github
-  [ ] Sign in via GitHub
-  [ ] Store credentials in session
+  [X] Not logged in, ask to sign in via github
+  [X] Sign in via GitHub
+  [X] Store credentials in session
 2. Heroku
   [ ] Installed and running
 3. Main App
