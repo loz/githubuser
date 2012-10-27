@@ -13,10 +13,6 @@ Then you can populate these values to the environment:
 
   source gitenv
 
-Now, create the database:
-
-  bundle exec rake db:migrate
-
 Finally start the server:
 
   bundle exec foreman start
